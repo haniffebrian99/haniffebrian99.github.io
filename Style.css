@@ -1,0 +1,438 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Sans-Serif, Arial;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  background: #f2f2f2;
+}
+.navbar{
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255,0.8);
+  backdrop-filter: blur(5px);
+  width: 100%;
+  padding: 15px 0;
+  box-shadow: 0 9px 20px rgba(0,0,0,0.15);
+  z-index: 1;
+}
+.navbar nav{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 40px;
+}
+.navbar nav img{
+  width: 90px;
+  height: 90px;
+  border-radius: 50px;
+  object-fit: cover;
+}
+.navbar nav div{
+  display: flex;
+  font-size: 30px;
+  align-items: center;
+  color: #3a542c;
+  gap: 1rem;
+}
+.navbar nav div p{
+  opacity: 0.6;
+}
+.glass-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  background: rgba(255,255,255,0.2);
+  border: 1px solid white;
+  border-radius: 80px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 0 30px rgba(0,0,0,0.5);
+}
+.hero{
+  background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),
+  url("image/mushaf_sulus.WebP") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  aspect-ratio: 16/9;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+.hero-text{
+  display: flex;
+  font-family: Monospace;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 70px;
+  padding: 40px 20px;
+  font-size: 45px;
+}
+.hero-text p{
+  font-family: Segoe UI;
+  text-align: center;
+  padding: 10px 30px;
+  font-size: 33px;
+  line-height: 1.6;
+  text-indent: 30px;
+}
+.concept{
+  background: #EEF3DD;
+  margin: 70px 0;
+  display: flex;
+  padding: 40px 40px;
+  box-shadow: 0 9px 25px rgba(0,0,0,0.2);
+}
+.concept-1{
+  display: flex;
+  max-width: 100%;
+  padding: 0 20px;
+}
+.concept-1 img{
+  width: 300px;
+  aspect-ratio: 3/5;
+  object-fit: cover;
+  border-radius: 40px;
+  border: 2px solid white;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+}
+.desc{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  font-size: 30px;
+  margin-left: 20px;
+  color: rgba(0,0,0,0.7);
+}
+.desc p{
+  text-align: justify;
+  text-indent: 30px;
+  line-height: 1.6;
+}
+.cards{
+  display: flex;
+  flex-direction: column;
+  background: #F9F8F2;
+  padding-bottom: 50px;
+}
+.b-text-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 90px;
+  background: #D0D8BC;
+  gap: 2rem;
+  margin-bottom: 20px;
+  box-shadow: 0 9px 25px rgba(0,0,0,0.3);
+  border-radius: 80px;
+}
+.box{
+  justify-content: center;
+}
+.b-text-box li{
+  list-style: none;
+}
+.a a, .b a{
+  background: #43722f;
+  font-size: 20px;
+  padding: 30px 60px;
+  border: 1px solid white;
+  border-radius: 100px;
+  box-shadow: 0 9px 18px rgba(0,0,0,0.4);
+  color: white;
+  text-decoration: none;
+}
+.text-box{
+  display: flex;
+  align-items: center;
+  font-size: 21px;
+  padding: 30px 70px;
+  color: rgba(255,255,255,0.8);
+  background: #43722F;
+  border-radius: 100px;
+  box-shadow: 0 9px 18px rgba(0,0,0,0.4);
+  border: 1px solid white;
+}
+.card-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  width: 100%;
+}
+.container{
+  display: flex;
+  justify-content: space-between;
+  width: 45%;
+  background: #ADC08C;
+  margin: 25px auto;
+  border-radius: 29px;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.4);
+  border: 1px solid white;
+}
+.card{
+  text-align: center;
+  padding-bottom: 15px;
+  color: white;
+}
+.card img{
+  width: 100%;
+  height: auto;
+  border-radius: 29px;
+  box-shadow: 0 9px 15px rgba(0,0,0,0.3);
+  cursor: pointer;
+}
+.card p{
+  font-size: 25px;
+  padding: 7px 0;
+}
+.card h3{
+  font-size: 40px;
+  padding-top: 17px;
+}
+footer{
+  text-align: center;
+  background: #43722F;
+  padding-bottom: 40px;
+}
+#contact{
+  background: #43722F;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateZ(0);
+}
+#contact h2{
+  color: white;
+  font-size: 50px;
+  margin: 40px 0;
+}
+.container-c{
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  padding-right: 20px;
+  color: white;
+  padding-bottom: 30px;
+}
+.card-c{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px 70px;
+}
+.card-c svg{
+  margin-bottom: 15px;
+  width: 60px;
+  height: auto;
+}
+.whatsapp, .instagram, .email{
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  padding: 45px;
+  border-radius: 40px;
+  box-shadow: 0 9px 9px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+.email{
+  padding: 47px 45px;
+}
+#about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #43722F;
+  transform: translateZ(0);
+}
+#about img{
+  width: 75px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 50px;
+  margin: 10px 0;
+  box-shadow: 0 9px 4px rgba(0,0,0,0.2);
+}
+.about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 25px;
+}
+h4{
+  font-size: 25px;
+  padding: 20px;
+  color: white;
+  opacity: 0.7;
+}
+@media (max-width: 768px) {
+  .navbar{
+    height: 50px;
+    box-shadow: 0 9px 12px rgba(0,0,0,0.3);
+  }
+  .navbar nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 7px;
+    padding: 0 15px;
+  }
+  .navbar nav div{
+    font-size: 15px;
+    gap: 6px;
+  }
+  .navbar nav img{
+    width: 35px;
+    height: 35px;
+  }
+  .hero{
+    width: 100%;
+    aspect-ratio: 16/9;
+    box-shadow: 0 8px 10px rgba(0,0,0,0.3);
+  }
+  .glass-card{
+    width: 70%;
+    border-radius: 40px;
+    border: 0.5px solid white;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+  }
+  .hero-text{
+    font-size: 20px;
+    gap: 15px;
+    padding: 19px 15px;
+  }
+  .hero-text p{
+    font-size: 12px;
+    text-indent: 0;
+    text-align: center;
+    padding: 0 20px;
+  }
+  .concept{
+    flex-direction: column;
+    align-items: center;
+    padding: 26px;
+    margin: 25px 0;
+    box-shadow: 0 7px 9px rgba(0,0,0,0.2);
+  }
+  .concept-1 img{
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    aspect-ratio: 16/9;
+    box-shadow: 0 5px 7px rgba(0,0,0,0.2);
+    border: 1.5px solid white;
+  }
+  .desc{
+    font-size: 14px;
+    margin-left: 0;
+    margin-top: 20px;
+    padding: 0 15px;
+  }
+  .b-text-box{
+    margin: 30px 10px;
+    width: 90%;
+    padding: 10px 10px;
+    box-shadow: 0 5px 7px rgba(0,0,0,0.3);
+    gap: 20px;
+  }
+  .box{
+    display: flex;
+    justify-content: center;
+  }
+  .a a, .b a{
+    font-size: 8px;
+    padding: 15px 20px;
+    border: 0.5px solid white;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.3);
+  }
+  .text-box{
+    font-size: 8px;
+    border: 0.3px solid white;
+    padding: 15px 20px;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.3);
+  }
+  .cards{
+    display: flex;
+    justify-content: center;
+  }
+  .card-wrapper{
+    gap: 1px
+  }
+  .container{
+    width: 43%;
+    margin: 10px auto;
+    border: 0.5px solid white;
+  }
+  .card img{
+    box-shadow: 0 4px 5px rgba(0,0,0,0.3);
+  }
+  .card{
+    padding-bottom: 5px;
+  }
+  .card h3{
+    padding-top: 5px;
+    font-size: 15px;
+  }
+  .card p{
+    font-size: 9px;
+  }
+  #contact{
+    margin-top: 0;
+  }
+  #contact h2{
+    font-size: 25px;
+    margin: 15px 0;
+  }
+  .container-c{
+    font-size: 7px;
+    padding-right: 8px;
+    padding-bottom: 13px;
+  }
+  .card-c{
+    margin: 15px 25px;
+  }
+  .card-c svg{
+    margin-bottom: 9px;
+    width: 25px;
+  }
+  .whatsapp, .instagram, .email{
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 6px 7px rgba(0,0,0,0.2);
+  }
+  .whatsapp h5, .instagram h5, .email h5{
+    font-size: 12px;
+  }
+  .email{
+    padding: 15px 23px;
+  }
+  .h4{
+    font-size: 10px;
+    padding: 0;
+  }
+  #about{
+    transform: translateZ(0);
+  }
+  .about{
+    margin-bottom: 10px;
+    gap: 20px;
+  }
+  #about img{
+    width: 25px;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+  }
+}
